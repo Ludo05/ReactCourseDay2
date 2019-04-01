@@ -56,8 +56,7 @@ describe('use reduce', () => {
   it('returns the total amount', () => {
     // Use .reduce to return the sum of the orders using a concise anonymous function
     // stored in a variable called orderTotal
-    const reducer = (accumulator, currentValue) => accumulator + currentValue.amount;
-    const orderTotal = orders.reduce(reducer, 0);
+    const orderTotal = orders.reduce((accumulator, currentValue) => accumulator + currentValue.amount, 0);
     expect(orderTotal).toEqual(1170)
   })
 })

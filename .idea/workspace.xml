@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44ec9941-4dbe-4331-adc6-0240752c39fa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/01_destructure.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/01_destructure.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/02_rest-operator.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/02_rest-operator.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/03_default-params.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/03_default-params.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/04_spread-operator.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/04_spread-operator.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/05_map-filter-reduce.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/05_map-filter-reduce.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/06_arrow-function.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/06_arrow-function.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/07_promise.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/07_promise.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/08_generators.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/08_generators.test.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,10 +15,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/07_promise.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-248">
+            <state relative-caret-position="-13">
               <caret line="113" column="45" selection-start-line="113" selection-start-column="45" selection-end-line="113" selection-end-column="45" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -34,10 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/08_generators.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="138">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -60,6 +54,7 @@
         <option value="$PROJECT_DIR$/src/05_map-filter-reduce.test.js" />
         <option value="$PROJECT_DIR$/src/06_arrow-function.test.js" />
         <option value="$PROJECT_DIR$/src/07_promise.test.js" />
+        <option value="$PROJECT_DIR$/src/08_generators.test.js" />
       </list>
     </option>
   </component>
@@ -77,6 +72,7 @@
     <option name="width" value="1280" />
     <option name="height" value="800" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -122,7 +118,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.chaining multiple promises can enhance readability.chain promises.multiple `then()`s can be chained">
+  <component name="RunManager" selected="Jest.use reduce.returns the total amount">
     <configuration name="a Promise represents an operation that hasn`t completed yet, but is expected in the future" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -133,34 +129,6 @@
       <test-file value="$PROJECT_DIR$/src/07_promise.test.js" />
       <test-names>
         <test-name value="a Promise represents an operation that hasn`t completed yet, but is expected in the future" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="a promise can be created in multiple ways" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/src/07_promise.test.js" />
-      <test-names>
-        <test-name value="a promise can be created in multiple ways" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="chaining multiple promises can enhance readability.chain promises.`then()` receives the result of the promise it was called on" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/07_promise.test.js" />
-      <test-names>
-        <test-name value="chaining multiple promises can enhance readability" />
-        <test-name value="chain promises" />
-        <test-name value="`then()` receives the result of the promise it was called on" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -179,28 +147,54 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="chaining multiple promises can enhance readability.chain promises.order of the `then()`s matters" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="generator can be created in multiple ways" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/08_generators.test.js" />
+      <test-names>
+        <test-name value="generator can be created in multiple ways" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="generator can be created in multiple ways.the most common way is by adding `*` after `function`" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/07_promise.test.js" />
+      <test-file value="$PROJECT_DIR$/src/08_generators.test.js" />
       <test-names>
-        <test-name value="chaining multiple promises can enhance readability" />
-        <test-name value="chain promises" />
-        <test-name value="order of the `then()`s matters" />
+        <test-name value="generator can be created in multiple ways" />
+        <test-name value="the most common way is by adding `*` after `function`" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="use reduce.returns the total amount" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/05_map-filter-reduce.test.js" />
+      <test-names>
+        <test-name value="use reduce" />
+        <test-name value="returns the total amount" />
       </test-names>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.use reduce.returns the total amount" />
+        <item itemvalue="Jest.generator can be created in multiple ways.the most common way is by adding `*` after `function`" />
+        <item itemvalue="Jest.generator can be created in multiple ways" />
         <item itemvalue="Jest.chaining multiple promises can enhance readability.chain promises.multiple `then()`s can be chained" />
         <item itemvalue="Jest.a Promise represents an operation that hasn`t completed yet, but is expected in the future" />
-        <item itemvalue="Jest.chaining multiple promises can enhance readability.chain promises.order of the `then()`s matters" />
-        <item itemvalue="Jest.chaining multiple promises can enhance readability.chain promises.`then()` receives the result of the promise it was called on" />
-        <item itemvalue="Jest.a promise can be created in multiple ways" />
       </list>
     </recent_temporary>
   </component>
@@ -214,20 +208,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554110305317</updated>
-      <workItem from="1554110306612" duration="8354000" />
+      <workItem from="1554110306612" duration="8832000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="chaining_multiple_promises_can_enhance_readability_chain_promises_multiple_`then()`s_can_be_chained - 2019.04.01 at 12h 38m 15s.xml">
-      <configuration name="chaining multiple promises can enhance readability.chain promises.multiple `then()`s can be chained" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="chaining_multiple_promises_can_enhance_readability_chain_promises_multiple_`then()`s_can_be_chained - 2019.04.01 at 12h 39m 12s.xml">
-      <configuration name="chaining multiple promises can enhance readability.chain promises.multiple `then()`s can be chained" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="chaining_multiple_promises_can_enhance_readability_chain_promises_order_of_the_`then()`s_matters - 2019.04.01 at 12h 39m 21s.xml">
-      <configuration name="chaining multiple promises can enhance readability.chain promises.order of the `then()`s matters" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
     <history-entry file="chaining_multiple_promises_can_enhance_readability_chain_promises_order_of_the_`then()`s_matters - 2019.04.01 at 12h 39m 58s.xml">
       <configuration name="chaining multiple promises can enhance readability.chain promises.order of the `then()`s matters" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
@@ -249,12 +234,22 @@
     <history-entry file="chaining_multiple_promises_can_enhance_readability_chain_promises_multiple_`then()`s_can_be_chained - 2019.04.01 at 14h 00m 03s.xml">
       <configuration name="chaining multiple promises can enhance readability.chain promises.multiple `then()`s can be chained" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
+    <history-entry file="generator_can_be_created_in_multiple_ways - 2019.04.01 at 14h 07m 44s.xml">
+      <configuration name="generator can be created in multiple ways" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="generator_can_be_created_in_multiple_ways_the_most_common_way_is_by_adding_`_`_after_`function` - 2019.04.01 at 14h 08m 32s.xml">
+      <configuration name="generator can be created in multiple ways.the most common way is by adding `*` after `function`" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="generator_can_be_created_in_multiple_ways_the_most_common_way_is_by_adding_`_`_after_`function` - 2019.04.01 at 14h 08m 57s.xml">
+      <configuration name="generator can be created in multiple ways.the most common way is by adding `*` after `function`" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8354000" />
+    <option name="totallyTimeSpent" value="8832000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="npm" side_tool="true" />
       <window_info id="Favorites" side_tool="true" />
@@ -262,11 +257,11 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" auto_hide="true" x="0" y="45" width="1253" height="755" id="Terminal" type="WINDOWED" visible="true" weight="0.37369207" />
+      <window_info anchor="bottom" auto_hide="true" x="0" y="45" width="1253" height="755" id="Terminal" type="WINDOWED" weight="0.37369207" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32913166" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32913166" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -334,19 +329,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/08_generators.test.js">
+    <entry file="file://$PROJECT_DIR$/src/07_promise.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="-13">
+          <caret line="113" column="45" selection-start-line="113" selection-start-column="45" selection-end-line="113" selection-end-column="45" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/07_promise.test.js">
+    <entry file="file://$PROJECT_DIR$/src/08_generators.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-248">
-          <caret line="113" column="45" selection-start-line="113" selection-start-column="45" selection-end-line="113" selection-end-column="45" />
+        <state relative-caret-position="138">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

@@ -4,7 +4,7 @@
 describe('generator can be created in multiple ways', () => {
 
   it('the most common way is by adding `*` after `function`', () => {
-    function g() {}
+    function* g() {}
     assertIsGenerator(g())
   })
 
